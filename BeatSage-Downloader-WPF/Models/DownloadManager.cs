@@ -30,8 +30,6 @@ namespace BeatSage_Downloader
 
         [field: NonSerialized()]
         public event PropertyChangedEventHandler PropertyChanged;
-
-        public static ObservableCollection<Download> Downloads { get; set; }
         
         //Constructor
         public DownloadManager()

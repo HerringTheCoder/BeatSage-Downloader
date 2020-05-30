@@ -29,7 +29,7 @@ namespace BeatSage_Downloader
             InitializeComponent();
             downloadManager = new DownloadManager();
 
-            dataGrid.ItemsSource = DownloadManager.Downloads;
+            dataGrid.ItemsSource = DownloadManager.downloads;
             updateAvailableLabel = newUpdateAvailableLabel;
 
             CheckUpdateAvailable();
