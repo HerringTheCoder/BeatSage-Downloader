@@ -6,7 +6,6 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -14,13 +13,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using YoutubeExplode;
-using YoutubeExplode.Videos.Streams;
 
 namespace BeatSage_Downloader
 {
     [Serializable]
-    public class DownloadManager: INotifyPropertyChanged
+    public class DownloadManager : INotifyPropertyChanged
     {
         //Fields
         public static ObservableCollection<Download> downloads = new ObservableCollection<Download>();
@@ -30,7 +27,7 @@ namespace BeatSage_Downloader
 
         [field: NonSerialized()]
         public event PropertyChangedEventHandler PropertyChanged;
-        
+
         //Constructor
         public DownloadManager()
         {
